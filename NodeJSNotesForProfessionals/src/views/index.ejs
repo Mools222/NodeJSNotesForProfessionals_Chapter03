@@ -1,0 +1,24 @@
+<h1><%= title %></h1>
+<ul>
+    <% for(var i = 0; i < supplies.length; i++) { %>
+        <li>
+            <a href='supplies/<%= supplies[i] %>'>
+                <%= supplies[i] %>
+            </a>
+        </li>
+    <% } %>
+</ul>
+
+<!-- Test -->
+<ul>
+    <% for(let supply of supplies) { %>
+        <li>
+            <a href='supplies/<%= supply %>'>
+                <%= supply %>
+            </a>
+        </li>
+    <% } %>
+</ul>
+
+Message:<br>
+<input type="text" value="<%= message %>" name="message" required>
